@@ -2,6 +2,7 @@ package com.example.ok
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.madrapps.pikolo.RGBColorPicker
 import com.madrapps.pikolo.listeners.OnColorSelectionListener
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        var back = findViewById<ConstraintLayout>(R.id.main)
+        var back = findViewById<TextView>(R.id.textView)
 
        var r =  findViewById<RGBColorPicker>(R.id.color).setColorSelectionListener( object :
             OnColorSelectionListener{
